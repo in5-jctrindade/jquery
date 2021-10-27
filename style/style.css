@@ -1,0 +1,145 @@
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+input, textarea {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+    padding: 10px;
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+.icone{
+    vertical-align: middle;
+}
+h1{
+    margin-bottom: 10px;
+}
+
+input:focus, textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border: 0 none;
+    outline: 0;
+}
+
+
+textarea, #nome {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+    width: 60%;
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+    max-height: 10em;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.6);
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize:vertical;
+}
+#nome,label{
+    width: 20%;
+    height: 30px;
+    margin-left: -430px;
+}
+.button {
+    /* Para posicionar os botões para a mesma posição dos campos de texto */
+    padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
+}
+button {
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+    margin-left: .5em;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: red; 
+    color:white;
+    border: none;
+    margin-top: 10px;
+    box-shadow:  0 0 8px rgba(0,0,0,.5);
+}
+button:hover{
+    opacity: .6;
+    transition: all .5s;
+    cursor: pointer;
+}
+#salvar{
+    background-color: blue; 
+}
+#limpar{
+    background-color: green;
+}
+
+
+
+
+#botoes{
+    width:60%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.container{
+    width: 80%;
+    min-height:615px;
+
+    display: flex;
+    background-color:white;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 20px;
+}
+#frase{
+    width: 80%;
+    text-align: left;
+}
+li{
+    list-style-type: none;
+}
+body{
+    background-color: #ddd;
+}
+#divisoria{
+    width: 30%;
+    height: 10px;
+    background-image: linear-gradient(to right, white,orange, red,white);
+    margin-bottom: 10px;
+}
+
+.borda-correta{
+    background-color:  rgb(125, 214, 125);
+
+}
+
+.borda-erro{
+    background-color:  rgb(216, 98, 98);
+}
+th{
+ padding: 30px ;
+ border: 2px gray; 
+}
+tr{
+    text-align: center;
+    border: solid 1px #ddd
+}
+.table{
+    width:50%;
+    margin: 0 auto;
+}
+a{
+    color: red;
+}
+
