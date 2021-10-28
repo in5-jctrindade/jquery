@@ -43,7 +43,7 @@ textarea, #nome {
     /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
     vertical-align: top;
     width: 60%;
-    /* Para dar espaço suficiente para digitar algum texto */
+   
     height: 5em;
     max-height: 10em;
     margin-top: 3px;
