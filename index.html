@@ -4,36 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro Projeto Jquery</title>
+    <title>AluraJquery</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Alura typer</h1>
+        <h1>Contandor de palavras</h1>
         <span id="divisoria"></span>
-        <p id="frase">Minha Frase</p>
+        <div id='container-frase'>
+            <p id="frase">Minha Frase</p>
+        </div>
+        
         <label name="nome">Nome</label>
         <input type="text" id="nome" name="nome">
         <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
         <div id="botoes">
             <button id="reinicia"><i class="small material-icons icone">find_replace</i></button>
             <button id="salvar"><i class="small material-icons icone">folder_shared</i></button>
-            <button id="limpar"><i class="small material-icons icone">format_paint</i></button>
+        
         </div>
-        <ul>
-            <li>
-                <i class="small material-icons icone">description</i>
-                <span id="contador-caracteres">0</span> caracteres
-            </li>
-            <li>
-                <i class="material-icons icone">update
-                    </i>
-                <span id="contador-palavras">0</span> palavras
-            </li>
-        </ul>
-        <p><span id="tempo-digitacao">30</span> segundos</p>
+        <div id="placar">
+            
+            <ul>
+                <li>
+                    <i class="small material-icons icone">description</i>
+                    <span id="contador-caracteres">0</span> caracteres
+                </li>
+                <li>
+                    <i class="material-icons icone">update
+                        </i>
+                    <span id="contador-palavras">0</span> palavras
+                </li>
+            </ul>
+            <p><span id="tempo-digitacao">30</span> segundos</p>
+        </div>
 
         <table class="result centered bordered table" >
             <thead>

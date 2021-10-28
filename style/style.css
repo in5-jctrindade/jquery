@@ -16,7 +16,7 @@ input, textarea {
 
     /* Para harmonizar o look & feel das bordas nos campos de texto*/
     border: 1px solid #999;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .icone{
     vertical-align: middle;
@@ -30,6 +30,13 @@ input:focus, textarea:focus {
     border: 0 none;
     outline: 0;
 }
+#container-frase{
+    padding: 10px;
+    border:none;
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.6);
+}
 
 
 textarea, #nome {
@@ -39,15 +46,20 @@ textarea, #nome {
     /* Para dar espaço suficiente para digitar algum texto */
     height: 5em;
     max-height: 10em;
-    margin-top: 10px;
-    box-shadow: 0 0 5px rgba(0,0,0, 0.6);
+    margin-top: 3px;
+    box-shadow: 0 0 2px rgba(0,0,0, 0.6);
     /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
     resize:vertical;
+    border: none;
 }
 #nome,label{
     width: 20%;
     height: 30px;
-    margin-left: -430px;
+    margin-left: -435px;
+    margin-bottom: 0px;
+}
+label{
+    margin-bottom: -5px;    
 }
 .button {
     /* Para posicionar os botões para a mesma posição dos campos de texto */
@@ -142,4 +154,15 @@ tr{
 a{
     color: red;
 }
-
+#placar{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    padding: 10px;
+    border:none;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.6);
+}
